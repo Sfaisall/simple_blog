@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Contact us</h2>
+    <form >
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" name="User_name" required 
+        pattern="[A-Za-z\s]+" title="Name should only contain letters and space."> <br><br>
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" name="User_email address" required 
+        pattern="[a-z0-9.-]+@[a-z0-9.-]+\.[a-z] {2,}$" title="Please enter a valid email address."><br><br>
+        <label for="number">Number:</label><br>
+        <input id="number" type="tel" name="mobile" placeholder="10-digit number" required 
+        pattern="[0-9]{10}" title="enter 10 digit mobile number"><br><br>
+        <label for="message">Your Message</label> <br>
+        <textarea name="message" id="message" required minlength="10" title="Message should be atleast 10 character long"></textarea><br><br>
+        <button type="submit">Send Message</button>
+
+    </form>
+</body>
+</html>
